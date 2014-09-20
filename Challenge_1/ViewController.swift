@@ -10,6 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet var imageLabel : UIImageView = nil
+    @IBOutlet var textField : UITextField = nil
+    @IBOutlet var buttonOutlet : UIButton = nil
+    @IBOutlet var textLabel : UILabel = nil
+    
+    @IBAction func sendPressed(sender : AnyObject) {
+        textLabel.text = textField.text
+        textLabel.hidden = false
+        imageLabel.hidden = false
+        textField.text = ""
+        textField.resignFirstResponder()
+        buttonOutlet.backgroundColor = UIColor.redColor()
+        buttonOutlet.setTitle("Sent", forState: UIControlState.Normal)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
