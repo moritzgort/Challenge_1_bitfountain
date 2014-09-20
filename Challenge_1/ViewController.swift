@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         buttonOutlet.backgroundColor = UIColor.redColor()
         buttonOutlet.setTitle("Sent", forState: UIControlState.Normal)
         
+        //some changes
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
